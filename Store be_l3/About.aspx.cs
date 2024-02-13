@@ -23,110 +23,73 @@ namespace Store_be_l3
             }
         }
 
-        
+
+
+        protected void AggiungiProdottoAlCookie(string valoreProdotto)
+        {
+
+            HttpCookie cookie = Request.Cookies["Prodotti"] ?? new HttpCookie("Prodotti");
+
+
+            string valoreEsistente = cookie.Value;
+
+            if (string.IsNullOrEmpty(valoreEsistente))
+            {
+                cookie.Value = valoreProdotto;
+            }
+            else
+            {
+                cookie.Value = valoreEsistente + "," + valoreProdotto;
+            }
+
+            cookie.Expires = DateTime.Now.AddDays(365);
+            Response.Cookies.Add(cookie);
+        }
+
+        protected void AggiungiImgProdotto(string imgProdotto)
+        {
+
+            HttpCookie cookie = Request.Cookies["imgCookie"] ?? new HttpCookie("imgCookie");
+
+
+            string valoreEsistente = cookie.Value;
+
+            if (string.IsNullOrEmpty(valoreEsistente))
+            {
+                cookie.Value = imgProdotto;
+            }
+            else
+            {
+                cookie.Value = valoreEsistente + "," + imgProdotto;
+            }
+
+            cookie.Expires = DateTime.Now.AddDays(365);
+            Response.Cookies.Add(cookie);
+        }
+
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string pr1;
-            string pr2;
-            string pr3;
-            string pr4;
-
-            HttpCookie cookie = new HttpCookie("Prodotti");
-            cookie.Expires = DateTime.Now.AddDays(5);
-            cookie.Values["prpdotto1"] = prodotto1.InnerText;
-
-            if (Request.Cookies["Prodotti"] != null)
-            {
-                pr1 = Request.Cookies["Prodotti"]["Prodotto1"];
-                pr2 = Request.Cookies["Prodotti"]["Prodotto2"];
-                pr3 = Request.Cookies["Prodotti"]["Prodotto3"];
-                pr4 = Request.Cookies["Prodotti"]["Prodotto4"];
-
-                cookie.Values["prpdotto2"] = pr2;
-                cookie.Values["prpdotto3"] = pr3;
-                cookie.Values["prpdotto4"] = pr4;
-            }
-            
-            Response.Cookies.Add(cookie);
+            AggiungiProdottoAlCookie(prodotto1.InnerText);
+            AggiungiImgProdotto(imgProdotto1.Src);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string pr1;
-            string pr2;
-            string pr3;
-            string pr4;
-
-            HttpCookie cookie = new HttpCookie("Prodotti");
-            cookie.Expires = DateTime.Now.AddDays(5);
-            cookie.Values["prpdotto2"] = prodotto2.InnerText;
-
-            if (Request.Cookies["Prodotti"] != null)
-            {
-                pr1 = Request.Cookies["Prodotti"]["Prodotto1"];
-                pr2 = Request.Cookies["Prodotti"]["Prodotto2"];
-                pr3 = Request.Cookies["Prodotti"]["Prodotto3"];
-                pr4 = Request.Cookies["Prodotti"]["Prodotto4"];
-
-                cookie.Values["prpdotto1"] = pr1;
-                cookie.Values["prpdotto3"] = pr3;
-                cookie.Values["prpdotto4"] = pr4;
-            }
-
-            Response.Cookies.Add(cookie);
+            AggiungiProdottoAlCookie(prodotto2.InnerText);
+            AggiungiImgProdotto(imgProdotto2.Src);
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            string pr1;
-            string pr2;
-            string pr3;
-            string pr4;
-
-            HttpCookie cookie = new HttpCookie("Prodotti");
-            cookie.Expires = DateTime.Now.AddDays(5);
-            cookie.Values["prpdotto3"] = prodotto3.InnerText;
-
-            if (Request.Cookies["Prodotti"] != null)
-            {
-                pr1 = Request.Cookies["Prodotti"]["Prodotto1"];
-                pr2 = Request.Cookies["Prodotti"]["Prodotto2"];
-                pr3 = Request.Cookies["Prodotti"]["Prodotto3"];
-                pr4 = Request.Cookies["Prodotti"]["Prodotto4"];
-
-                cookie.Values["prpdotto2"] = pr2;
-                cookie.Values["prpdotto1"] = pr1;
-                cookie.Values["prpdotto4"] = pr4;
-            }
-
-            Response.Cookies.Add(cookie);
+            AggiungiProdottoAlCookie(prodotto3.InnerText);
+            AggiungiImgProdotto(imgProdotto3.Src);
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            string pr1;
-            string pr2;
-            string pr3;
-            string pr4;
-
-            HttpCookie cookie = new HttpCookie("Prodotti");
-            cookie.Expires = DateTime.Now.AddDays(5);
-            cookie.Values["prpdotto4"] = prodotto4.InnerText;
-
-            if (Request.Cookies["Prodotti"] != null)
-            {
-                pr1 = Request.Cookies["Prodotti"]["Prodotto1"];
-                pr2 = Request.Cookies["Prodotti"]["Prodotto2"];
-                pr3 = Request.Cookies["Prodotti"]["Prodotto3"];
-                pr4 = Request.Cookies["Prodotti"]["Prodotto4"];
-
-                cookie.Values["prpdotto2"] = pr2;
-                cookie.Values["prpdotto3"] = pr3;
-                cookie.Values["prpdotto1"] = pr1;
-            }
-
-            Response.Cookies.Add(cookie);
+            AggiungiProdottoAlCookie(prodotto4.InnerText);
+            AggiungiImgProdotto(imgProdotto4.Src);
         }
     }
 }

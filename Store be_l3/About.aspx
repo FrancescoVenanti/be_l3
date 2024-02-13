@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-3">
                 <div class="card">
-                <img src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
+                <img id="imgProdotto1" runat="server" src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title" id="prodotto1" runat="server" >Prodotto 1</h5>
                     <p class="card-text">Descrizione prodotto</p>
@@ -22,7 +22,7 @@
 
             <div class="col-3">
     <div class="card">
-    <img src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
+    <img id="imgProdotto2" runat="server" src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title" id="prodotto2" runat="server">Prodotto 2</h5>
         <p class="card-text">Descrizione prodotto</p>
@@ -35,7 +35,7 @@
 
             <div class="col-3">
     <div class="card">
-    <img src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
+    <img id="imgProdotto3" runat="server" src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title" id="prodotto3" runat="server">Prodotto 3</h5>
         <p class="card-text">Descrizione prodotto</p>
@@ -48,7 +48,7 @@
 
             <div class="col-3">
     <div class="card">
-    <img src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
+    <img id="imgProdotto4" runat="server" src="https://img.freepik.com/free-vector/sticker-template-with-mini-house-isolated_1308-60687.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1707523200&semt=ais" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title" id="prodotto4" runat="server">Prodotto 4</h5>
         <p class="card-text">Descrizione prodotto</p>

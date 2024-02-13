@@ -24,6 +24,15 @@ namespace Store_be_l3
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl username_par;
 
         /// <summary>
+        /// Controllo imgProdotto1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgProdotto1;
+
+        /// <summary>
         /// Controllo prodotto1.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace Store_be_l3
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Controllo imgProdotto2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgProdotto2;
 
         /// <summary>
         /// Controllo prodotto2.
@@ -60,6 +78,15 @@ namespace Store_be_l3
         protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
+        /// Controllo imgProdotto3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgProdotto3;
+
+        /// <summary>
         /// Controllo prodotto3.
         /// </summary>
         /// <remarks>
@@ -76,6 +103,15 @@ namespace Store_be_l3
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
+
+        /// <summary>
+        /// Controllo imgProdotto4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage imgProdotto4;
 
         /// <summary>
         /// Controllo prodotto4.
